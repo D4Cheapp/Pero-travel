@@ -30,9 +30,14 @@ module.exports={
     module: {
         rules: [
             {
-                test: /\.tsx?$/,
-                use: ['ts-loader'],
-                exclude: /node_modules/
+                test: /\.(js|jsx)$/,
+                exclude: /node_modules/,
+                use: ["babel-loader"],
+            },
+            {
+                test: /\.(ts|tsx)$/,
+                exclude: /node_modules/,
+                use: ["ts-loader"],
             },
             {
                 test: /\.css$/,
@@ -65,6 +70,9 @@ module.exports={
                     }
             ]}],
     },
-    plugins: [new HtmlWebpackPlugin({template: path.resolve(__dirname,'./src/index.html')}),
+    plugins: [new HtmlWebpackPlugin({
+        template: path.resolve(__dirname,'./src/index.html'),
+        favicon: path.resolve(__dirname,'./src/favicon.ico')
+    }),
         new CleanWebpackPlugin()]
 }
