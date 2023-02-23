@@ -1,0 +1,39 @@
+nav
+  position: absolute
+  z-index: 100
+  top: 0
+
+  display: inline-flex
+  justify-content: space-between
+  align-items: center
+  padding-inline: 10%
+
+  height: 150px
+  width: 80%
+
+  img.nav__logo
+    width: 50px
+    object-fit: cover
+
+
+div.links
+  display: inline-flex
+  gap: 20px
+
+  a.links__link
+    text-decoration: none
+    color: $white
+    font-size: 20px
+    font-weight: 500
+    letter-spacing: 1.1px
+    border-bottom: 1px transparent solid
+    transition: .3s
+
+    &:hover
+      border-bottom: 1px $white solid
+
+  a.links__link__active
+    color: $supernova
+
+    &:hover
+      border-bottom: 1px $supernova solid

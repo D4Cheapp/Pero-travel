@@ -18,6 +18,7 @@ specifiers:
   autoprefixer: ^10.4.13
   babel-loader: ^9.1.2
   clean-webpack-plugin: ^4.0.0
+  components-loader: ^1.1.0
   css-loader: ^6.7.3
   file-loader: ^6.2.0
   html-webpack-plugin: ^5.5.0
@@ -62,6 +63,7 @@ devDependencies:
   autoprefixer: 10.4.13_postcss@8.4.21
   babel-loader: 9.1.2_la66t7xldg4uecmyawueag5wkm
   clean-webpack-plugin: 4.0.0_webpack@5.75.0
+  components-loader: 1.1.0
   css-loader: 6.7.3_webpack@5.75.0
   file-loader: 6.2.0_webpack@5.75.0
   html-webpack-plugin: 5.5.0_webpack@5.75.0
@@ -3455,6 +3457,10 @@ packages:
       tryer: 1.0.1
     dev: true
 
+  /big.js/3.2.0:
+    resolution: {integrity: sha512-+hN/Zh2D08Mx65pZ/4g5bsmNiZUuChDiQfTUQ7qJr4/kuopCr88xZsAXv6mBoZEsUI4OuGHlX59qE94K2mMW8Q==}
+    dev: true
+
   /big.js/5.2.2:
     resolution: {integrity: sha512-vyL2OymJxmarO8gxMr0mhChsO9QGwhynfuu4+MHTAW6czfq9humCB7rKpUjDd9YUiDPU4mzpyupFSvOClAwbmQ==}
     dev: true
@@ -3932,6 +3938,12 @@ packages:
 
   /commondir/1.0.1:
     resolution: {integrity: sha512-W9pAhw0ja1Edb5GVdIF1mjZw/ASI0AlShXM83UUGe2DVr5TdAPEA1OA8m/g8zWp9x6On7gqufY+FatDbC3MDQg==}
+    dev: true
+
+  /components-loader/1.1.0:
+    resolution: {integrity: sha512-uyZdcpmzWQH2Z8ujWOoTmQwDCi8fAiJdbRjGUprtVcbaNu15HxC9HptdS282pY+UG6pBT8CdMrp5G3qltXLEIA==}
+    dependencies:
+      loader-utils: 0.2.17
     dev: true
 
   /compressible/2.0.18:
@@ -7490,6 +7502,11 @@ packages:
     resolution: {integrity: sha512-Bdboy+l7tA3OGW6FjyFHWkP5LuByj1Tk33Ljyq0axyzdk9//JSi2u3fP1QSmd1KNwq6VOKYGlAu87CisVir6Pw==}
     dev: true
 
+  /json5/0.5.1:
+    resolution: {integrity: sha512-4xrs1aW+6N5DalkqSVA8fxh458CXvR99WU8WLKmq4v8eWAL86Xo3BVqyd3SkA9wEVjCMqyvvRRkshAdOnBp5rw==}
+    hasBin: true
+    dev: true
+
   /json5/1.0.2:
     resolution: {integrity: sha512-g1MWMLBiz8FKi1e4w0UyVL3w+iJceWAFBAaBnnGKOpNa5f8TLktkbre1+s6oICydWAm+HRUGTmI+//xv2hvXYA==}
     hasBin: true
@@ -7604,6 +7621,15 @@ packages:
   /loader-runner/4.3.0:
     resolution: {integrity: sha512-3R/1M+yS3j5ou80Me59j7F9IMs4PXs3VqRrm0TU3AbKPxlmpoY1TNscJV/oGJXo8qCatFGTfDbY6W6ipGOYXfg==}
     engines: {node: '>=6.11.5'}
+    dev: true
+
+  /loader-utils/0.2.17:
+    resolution: {integrity: sha512-tiv66G0SmiOx+pLWMtGEkfSEejxvb6N6uRrQjfWJIT79W9GMpgKeCAmm9aVBKtd4WEgntciI8CsGqjpDoCWJug==}
+    dependencies:
+      big.js: 3.2.0
+      emojis-list: 2.1.0
+      json5: 0.5.1
+      object-assign: 4.1.1
     dev: true
 
   /loader-utils/1.2.3:

@@ -1,14 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './sass/style.sass';
+import './style.sass';
 import 'normalize.css/normalize.css';
+import App from "./App";
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 )
 
 root.render(
-    <div>
-        <h1>Hello</h1>
-    </div>
+    <App/>
 )

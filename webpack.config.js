@@ -24,9 +24,6 @@ module.exports={
         filename: `[name].js`,
         path: path.resolve(__dirname,'dist')
     },
-    resolve: {
-        extensions: ['.ts', '.tsx', '.js', '.json']
-    },
     module: {
         rules: [
             {
@@ -37,7 +34,7 @@ module.exports={
             {
                 test: /\.(ts|tsx)$/,
                 exclude: /node_modules/,
-                use: ["ts-loader"],
+                use: ['babel-loader', 'ts-loader'],
             },
             {
                 test: /\.css$/,
@@ -69,6 +66,14 @@ module.exports={
                         }
                     }
             ]}],
+    },
+    resolve: {
+        extensions: ['.tsx', '.js', '.json'],
+        alias: {
+            "@sass": path.resolve(__dirname,"./src/sass"),
+            "@components" : path.resolve(__dirname,"./src/components"),
+            "@img" : path.resolve(__dirname,"./src/img"),
+        }
     },
     plugins: [new HtmlWebpackPlugin({
         template: path.resolve(__dirname,'./src/index.html'),

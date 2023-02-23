@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800;900&display=swap')
+
+$white: #ffff
+$supernova: #FFC700
+$cerulean: #0499DD
+$java: #17C1BC
+
+body
+  overflow-x: hidden
+  font-family: Monserrat, sans-serif
+  font-weight: 400
+
+
+=gradient-button($width)
+  outline: none
+  height: calc($width / 5)
+  width: $width
+
+
+  color: $white
+  font-weight: 700
+
+  background: linear-gradient(92.71deg, $cerulean 0%, $java 100%) 50% 0
+  background-size: 150% 100%
+
+  border-radius: 60px
+  cursor: pointer
+  transition: .3s
+
+  &:hover
+    background-position: 100%, 0
+    scale: 1.1
+
+  &:active
+    background-position: 0, 0
+    scale: .95
+
+=gradient-link($padding)
+  padding-inline: $padding
+  padding-block: calc($padding / 5)
+  text-decoration: none
+
+  &:hover
+    scale: 1.1
+
+  &:active
+    scale: .95
