@@ -15,7 +15,6 @@ module.exports={
     //Настройки сервера
     devServer: {
         watchFiles: [path.resolve(__dirname,"src")],
-        historyApiFallback: true,
         port:3000,
         hot:true,
     },

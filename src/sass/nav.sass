@@ -13,6 +13,7 @@ nav
 
   img.nav__logo
     width: 50px
+    cursor: pointer
     object-fit: cover
 
 
@@ -27,12 +28,12 @@ div.links
     font-weight: 500
     letter-spacing: 1.1px
     border-bottom: 1px transparent solid
-    transition: .3s
+    transition: border-bottom-color .3s
 
     &:hover
       border-bottom: 1px $white solid
 
-  a.links__link__active
+  a.links__link.active
     color: $supernova
 
     &:hover

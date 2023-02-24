@@ -1,0 +1,23 @@
+div.header-videos
+  position: absolute
+  bottom: -17.5vh
+  right: -10vh
+  display: inline-flex
+  gap: 50px
+
+div.header-video-card
+  position: relative
+
+  div.header-video-card__blackout
+    position: absolute
+    z-index: 1
+    border-radius: 20px
+    background: $black
+    opacity: .4
+    width: 100%
+    height: 100%
+
+  img.header-video-card__preview
+    height: 35vh
+    border-radius: 20px
+    object-fit: scale-down
